@@ -1,0 +1,29 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCE = [
+  {
+    date: "Junio 2023 - Septiembre 2023",
+    title: "Especialista en Sistemas de Seguridad",
+    company: "SEHIVIPRO - Seguridad Hispánica de Vigilancia y Protección, S.L.",
+    description:
+      "Instalé y mantuve sistemas de alarmas y CCTV, ganando experiencia en la configuración, programación y mantenimiento preventivo y correctivo de equipos de seguridad. Además, colaboré con el equipo técnico para resolver incidencias complejas y optimizar el rendimiento de los sistemas instalados, asegurando un alto nivel de seguridad y satisfacción del cliente.",
+  },
+  {
+    date: "Marzo 2023 - Junio 2023",
+    title: "Formación en Centros de Trabajo",
+    company: "SEHIVIPRO - Seguridad Hispánica de Vigilancia y Protección, S.L.",
+    description:
+      "Durante este periodo, realicé prácticas en la instalación y mantenimiento de sistemas de seguridad, incluyendo alarmas y CCTV. Aprendí sobre la configuración y programación de equipos de seguridad, así como la ejecución de mantenimientos preventivos y correctivos.",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
